@@ -1,0 +1,27 @@
+/*
+Colors:
+
+Accent: 43D2FF
+Primary/Default: 072AC8
+Primary/Hover: A2D6F9
+Primary/tapped: D1EDFF
+Neutral-dark: 292E47
+Neutral-medium: 6B708D
+Neutral-light: F2F4FC
+Neutral-lightBlue: ECF7FF
+Secondary/1: FFC6DD
+
+In the following way you can call the colors in your CSS file: 
+And also in the html file with: background-color: var(--color-primary-default);
+*/
+:root {
+    --color-accent: #43D2FF;
+    --color-primary-default: #072AC8;
+    --color-primary-hover: #A2D6F9;
+    --color-primary-tapped: #D1EDFF;
+    --color-neutral-dark: #292E47;
+    --color-neutral-medium: #6B708D;
+    --color-neutral-light: #F2F4FC;
+    --color-neutral-lightBlue: #ECF7FF;
+    --color-secondary-1: #FFC6DD;
+}
