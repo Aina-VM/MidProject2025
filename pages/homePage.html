@@ -4,34 +4,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="homePage.css">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/index.css">
         <script src="./styles/index.js" defer></script>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class = "logo">
                 <img src="../projectAssets/logos/circle.svg" alt="Logo-circle">
             </nav>
-            <nav>
+            <nav class = "menu">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Services</a></li>
                 </ul>
             </nav>
-            <button>Contact Us</button>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            <button class="contact-button">Contact Us</button>
         </header>
         <section class = "heroSection">
-            <h1>Empower Your Business With Stunning Design!</h1>
-            <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-            <button>Get in touch</button>
-            <button>See our work</button>
-            <div>
+            <div class="text-heroSection content-container">
+                <h1>Empower Your Business With Stunning Design!</h1>
+                <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
+            </div>            
+            
+            <div class="images-heroSection content-container">
                 <img src="../projectAssets/hero-section/hero-image.png" alt="Hero Image">
                 <img src="../projectAssets/hero-section/card-1.png" alt="Hero Image 2">
                 <img src="../projectAssets/hero-section/card-2.png" alt="Hero Image 3">
             </div>
+
+            
+            <button>Get in touch</button>
+            <button>See our work</button>
+            
+
         </section>
         <section class = "clientSection">
             <div class = "clientLogos">
@@ -66,22 +79,23 @@
                 </div>
             </div>
         </section>
-        <section class="TestimonialSection">
+        <section class = "TestimonialSection">
             <div>
-                <img src="../projectAssets/testimonial-section/orbit.png"
                 <h2>Hear what Our Clients Have To Say</h2>
                 <p>"Circle helped us through every stage of our startup.</p>
                 <p>We really enjoyed working with you."</p>
-                <div>
+                <img class="orbits" src="../projectAssets/testimonial-section/orbit.png">
+                              
+                <div class = "client-info">
                     <p>Kristin Watson</p>
                     <p>Booking.com</p>
-                    <img src="../projectAssets/testimonials-section/profile.png" alt="Kristin picture">
+                    <img src="..\projectAssets\testimonial-section\profile.png" alt="Kristin picture">
                 </div>
-                <div>
-                    <img src="../projectAssets/testimonials-section/memoji-1.png" alt="Emoji 1">
-                    <img src="../projectAssets/testimonials-section/memoji-2.png" alt="Emoji 2">
-                    <img src="../projectAssets/testimonials-section/memoji-3.png" alt="Emoji 3">
-                    <img src="../projectAssets/testimonials-section/memoji-4.png" alt="Emoji 4">    
+                <div class = "emojis">
+                    <img src="..\projectAssets\testimonial-section\memoji-1.png" alt="Emoji 1">
+                    <img src="..\projectAssets\testimonial-section\memoji-2.png" alt="Emoji 2">
+                    <img src="..\projectAssets\testimonial-section\memoji-3.png" alt="Emoji 3">
+                    <img src="..\projectAssets\testimonial-section\memoji-4.png" alt="Emoji 4">    
                 </div>
             </div>
         </section>
@@ -89,19 +103,19 @@
             <h2>Our Services</h2>
             <div>
                 <div>
-                    <img src=".../projectAssets/services-section/icons/1.svg">
+                    <img src="../projectAssets/services-section/icons/1.svg">
                     <h3>User Interface Design</h3>
                     <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <img src=".../projectAssets/services-section/icons/2.svg">
+                    <img src="../projectAssets/services-section/icons/2.svg">
                     <h3>User Experience Design</h3>
                     <p>Circle always focuses on delivering the best user experience to your customers.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <img src=".../projectAssets/services-section/icons/3.svg">
+                    <img src="../projectAssets/services-section/icons/3.svg">
                     <h3>Application Development</h3>
                     <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
                     <a href="#">Learn more</a>
@@ -137,5 +151,6 @@
                 <p>123 Circle Design Studio</p>
                 <p>
         </footer>
+        <script src="homePage.js"></script>
     </body>
 </html>
