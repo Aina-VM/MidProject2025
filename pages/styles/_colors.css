@@ -16,12 +16,16 @@ And also in the html file with: background-color: var(--color-primary-default);
 */
 :root {
     --color-accent: #43D2FF;
-    --color-primary-default: #072AC8;
-    --color-primary-hover: #A2D6F9;
+    --color-bottons: #072AC8;
+    --color-client1: #A2D6F9;
     --color-primary-tapped: #D1EDFF;
     --color-neutral-dark: #292E47;
     --color-neutral-medium: #6B708D;
-    --color-neutral-light: #F2F4FC;
+    --color-background: #F2F4FC;
     --color-neutral-lightBlue: #ECF7FF;
+    --color-yellow-questions: #FFC600;
     --color-secondary-1: #FFC6DD;
+    --color-titles: #292E47;
+    --color-texts: #6B708D;
+    --color-text-white: #F4F6FC;
 }

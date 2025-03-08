@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="homePage.css">
-        <link rel="stylesheet" href="./styles/main.css">
-        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/_colors.css">
+        <link rel="stylesheet" href="./styles/_fonts.css">
         <script src="./styles/index.js" defer></script>
     </head>
     <body>
@@ -82,13 +82,12 @@
         <section class = "TestimonialSection">
             <div>
                 <h2>Hear what Our Clients Have To Say</h2>
-                <p>"Circle helped us through every stage of our startup.</p>
-                <p>We really enjoyed working with you."</p>
+                <p class="yelloy-text">"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
                 <img class="orbits" src="../projectAssets/testimonial-section/orbit.png">
                               
                 <div class = "client-info">
-                    <p>Kristin Watson</p>
-                    <p>Booking.com</p>
+                    <p class="client1">Kristin Watson</p>
+                    <p class="source">Booking.com</p>
                     <img src="..\projectAssets\testimonial-section\profile.png" alt="Kristin picture">
                 </div>
                 <div class = "emojis">
@@ -101,22 +100,22 @@
         </section>
         <section class="serviceSection">
             <h2>Our Services</h2>
-            <div>
-                <div>
+            <div class="services">
+                <div class="serviceCard">
                     <img src="../projectAssets/services-section/icons/1.svg">
-                    <h3>User Interface Design</h3>
+                    <h4>User Interface Design</h4>
                     <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
                     <a href="#">Learn more</a>
                 </div>
-                <div>
+                <div class="serviceCard">
                     <img src="../projectAssets/services-section/icons/2.svg">
-                    <h3>User Experience Design</h3>
+                    <h4>User Experience Design</h4>
                     <p>Circle always focuses on delivering the best user experience to your customers.</p>
                     <a href="#">Learn more</a>
                 </div>
-                <div>
+                <div class="serviceCard">
                     <img src="../projectAssets/services-section/icons/3.svg">
-                    <h3>Application Development</h3>
+                    <h4>Application Development</h4>
                     <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
                     <a href="#">Learn more</a>
             </div>
@@ -130,7 +129,7 @@
             </form>
         </section>
         
-        <footer>
+        <footer class="footer">
             <div>
                 <img src="../projectAssets/logos/circle.svg" alt="Logo-circle">
                 <p>2972 Westheimer Rd. Santa Ana,</p>
@@ -146,10 +145,6 @@
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
-            <div>
-                <h3>Contact Us</h3>
-                <p>123 Circle Design Studio</p>
-                <p>
         </footer>
         <script src="homePage.js"></script>
     </body>

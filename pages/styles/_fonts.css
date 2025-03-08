@@ -1,0 +1,94 @@
+/* fonts: 
+h1: roboto Bold 60 
+h2: roboto Bold 50
+h3: roboto Bold 40
+h4: roboto Bold 24
+
+body-intro: roboto Medium 22
+body-intro 2: Roboto Regular 20
+
+headline-text: roboto Regular 17
+Headline-text 2; roboto medium 17
+caption 1 : roboto Regular 15
+caption 2: roboto Medium 13
+*/
+
+/* variables.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --font-roboto: 'Roboto', sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  --h1-font-size: 60px;
+  --h2-font-size: 50px;
+  --h3-font-size: 40px;
+  --h4-font-size: 24px;
+  --body-intro-font-size: 22px;
+  --body-hero-font-size: 20px;
+  --headline-text-font-size: 17px;
+  --caption-1-font-size: 15px;
+  --caption-2-font-size: 13px;
+}
+
+/* h1 {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--h4-font-size);
+}
+
+.body-intro {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--body-intro-font-size);
+}
+
+.body-intro-2 {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--body-intro-2-font-size);
+}
+
+.headline-text {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--headline-text-font-size);
+}
+
+.headline-text-2 {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--headline-text-font-size);
+}
+
+.caption-1 {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--caption-1-font-size);
+}
+
+.caption-2 {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--caption-2-font-size);
+} */
