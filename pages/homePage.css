@@ -1,18 +1,18 @@
 
 /* Margins and pagging reset*/
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
   }
 
 /* Mobile first */
 body {
-    font-family: Arial, sans-serif; /* Cambia según la tipografía del diseño */
     background-color: var(--color-background); /* Un color neutro de fondo, ajusta según tu diseño */
     color: var(--color-titles); 
     line-height: 1.6;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
   }
 
   /* Letter types */
@@ -26,6 +26,7 @@ body {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-bold);
     font-size: 20px;
+    color: var(--color-titles);
   }
   
   h3 {
@@ -57,8 +58,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #fff; /* Cambia según el diseño */
+    padding: 0px;
   }
   
   header .logo {
@@ -72,7 +72,7 @@ header {
 
   header .menu ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
   }
   
   header .menu ul li {
@@ -301,48 +301,75 @@ header {
 
 /* SERVICE SECTION */
 .serviceSection {
-  padding: 20px 20px;
-  background-color: burlywood;
-  color: black;
+  padding: 50px 10px;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 5px;
-  padding: 5px 5px;
 }
 
 .serviceSection .services {
   display: flex;
   flex-direction: row;
-  overflow-x: auto;
-  
+  overflow-x: auto; /* Allows scrolling on small screens */
+  white-space: nowrap;
+  padding: 5px 0px;
   gap: 10px;
+  width: 90%; 
 }
 
 .serviceSection .serviceCard {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  gap: 5px;
-  padding: 1px 10px;
-  background-color: white;
-  width: 220px;
-  
-  img {
+  padding: 20px 15px;
+  background-color: var(--color-rectangle-service);
+  width: 190px;
+  height: 212px;
+  gap: 1px;
+  p {
+    white-space: normal; 
+    word-break: break-word;
+  }
+  div {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
     width: 40px;
+    height: 40px;
+    border-radius: 49.6%;
+    background-color: var(--color-neutral-lightBlue);
+
+    img {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+    }
+  }
+  a {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-start; 
   }
 }
 
 /* CTA section */
-.CTASection {
+.CTASection div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--color-yellow-questions);
+  gap: 15px;
+  padding: 30px 0px;
 }
 .CTASection form {
   display: flex;
@@ -388,12 +415,12 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 12vw;
-  align-items: flex-end;
-  width: 90vw;
+  justify-content: flex-start;
+  gap: 4px;
+  align-items: center;
   li {
     list-style: none;
+    height: 15px;
   }
 }
 
@@ -406,16 +433,15 @@ header {
 
 
 
-
   /* Tablets */
-  @media (min-width: 768px) {
+  @media (min-width: 400px) {
     body {
       font-size: 16px;
     }
   }
   
   /* Desktops */
-  @media (min-width:1000px) {
+  @media (min-width:500px) {
     h1 {
       font-family: var(--font-roboto);
       font-weight: var(--font-weight-bold);
@@ -452,6 +478,82 @@ header {
       font-size: var(--headline-text-font-size);
     }
 
+
+    header {
+      height: 122px;
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: last baseline;
+      align-self: center;
+      padding: 0px;
+      position: relative;
+    }
+    
+    header .logo {
+      position: absolute;
+      left: 170.64px;
+      top: 86.91px;
+      img {
+        width: 60.53px;
+        height: 18.46px; 
+      }
+    }
+    
+    header .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex: 2;
+      align-items: center; /* Ensure the menu is aligned with the logo */
+    }
+
+    header .hamburger-menu {
+      display: none;
+    }
+
+    header .menu ul {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center; /* Ensure the menu items are aligned */
+    }
+
+    header .menu ul li {
+      margin: 0;
+    }
+
+    header .menu ul li a {
+      text-decoration: none;
+      color: var(--color-neutral-medium);
+      font-size: 18px;
+    }
+  
+    
+  
+    header .contact-button {
+      display: flex;
+      width: 150px;
+      height: 52px;
+      border-radius: 0%;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 170.65px;
+      top: 70px;
+    }
+  
+    
+    
+    .serviceSection .serviceCard {
+      padding: 1px 10px 5px 5px;
+      background-color: var(--color-rectangle-service);
+      width: 340px;
+      height: 380px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
 
 
   }
