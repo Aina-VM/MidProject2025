@@ -51,6 +51,7 @@ body {
     color: var(--color-bottons);
     font-weight: var(--font-weight-regular);
     font-size: 10px;
+    font-family: var(--font-roboto);
   }
 
   /* HEADER*/
@@ -81,8 +82,6 @@ header {
   
   header .menu ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
   }
 
   header .menu.active {
@@ -111,45 +110,19 @@ header {
   }
   
   
-/* Imagen principal o banner */
-.heroSection {
-    width: 100%;
-    background-position: center;
-    border-radius: 8px;
+/*HERO SECTION */
+ 
+  .buttonA, .buttonB {
+      background-color: var(--color-bottons); /* Ajusta el color principal del botón */
+      color: var(--color-rectangle-service);
+      border: none;
+      border-radius: 5px;
+      width: 100%; /* Los botones ocupan todo el ancho en móviles */
   }
   
-  /* Botones */
-  button {
-    background-color: var(--color-bottons); /* Ajusta el color principal del botón */
-    color: white;
-    padding: 4px 5px;
-    border: none;
-    border-radius: 5px;
-    font-size: 12px;
-    width: 100%; /* Los botones ocupan todo el ancho en móviles */
-    margin-top: 5px;
-  }
-  
-  button:hover {
-    background-color: #0056b3; /* Color cuando el botón es hover */
-  }
 
 
-  /* HERO SECTION */
-  .heroSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0px 10px;
-}
 
-.texts-heroSection p {
-    margin-bottom: 20px;
-    max-width: 300px;
-    font-size: var(--body-hero-font-size);
-    color: var(--color-texts);
-}
 .images-heroSection img:nth-child(1),
 .images-heroSection img:nth-child(2),
 .images-heroSection img:nth-child(3) {
@@ -442,52 +415,58 @@ header {
   
   /* Desktops */
   @media (min-width:500px) {
-    h1 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: var(--h1-font-size);
-    }
-    
-    h2 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: var(--h2-font-size);
-    }
-    
-    h3 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: var(--h3-font-size);
-    }
-    
-    h4 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: var(--h4-font-size);
-    }
 
-    p {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-regular);
-      font-size: var(--caption-1-font-size);
-    }
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--h1-font-size);
+  }
   
-    a {
-      color: var(--color-bottons);
-      font-weight: var(--font-weight-regular);
-      font-size: var(--headline-text-font-size);
-    }
+  h2 {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--h2-font-size);
+  }
+  
+  h3 {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--h3-font-size);
+  }
+  
+  h4 {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--h4-font-size);
+  }
 
+  p {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--caption-1-font-size);
+  }
+  a {
+    color: var(--color-bottons);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--headline-text-font-size);
+    font-family: var(--font-roboto);
+  }
 
+   
     header {
       height: 122px;
       width: 100vw;
       display: flex;
       justify-content: space-between;
-      align-items: last baseline;
+
       align-self: center;
       padding: 0px;
       position: relative;
+      margin: 0px;
     }
     
     header .logo {
@@ -505,8 +484,9 @@ header {
       flex-direction: row;
       justify-content: center;
       flex: 2;
-      align-items: center; /* Ensure the menu is aligned with the logo */
+      margin-top: 85px
     }
+
 
     header .hamburger-menu {
       display: none;
@@ -515,18 +495,21 @@ header {
     header .menu ul {
       display: flex;
       flex-direction: row;
-      gap: 20px;
-      align-items: center; /* Ensure the menu items are aligned */
+      gap: 60px;
+      width: 295px;
     }
 
     header .menu ul li {
       margin: 0;
-    }
+      align-self: center;
+      height: 22px;
+      
+     }
 
     header .menu ul li a {
-      text-decoration: none;
-      color: var(--color-neutral-medium);
-      font-size: 18px;
+      color: var(--color-texts);
+      font-weight: var(--font-weight-medium);
+      height: 22px;
     }
   
     
@@ -541,8 +524,87 @@ header {
       position: absolute;
       right: 170.65px;
       top: 70px;
+      margin: 0px 0px;
+      padding: 0px 0px;
+      font-weight: var(--font-weight-regular);
+      font-size: var(--headline-text-font-size);
+      font-family: var(--font-roboto);
+      background-color: var(--color-bottons);
+      color: var(--color-rectangle-service);
+      border: none;
     }
   
+  
+    /* HERO SECTION */
+
+    .heroSection {
+      padding: 0px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+      }
+    .texts-heroSection {
+      margin-bottom: 0px;
+      margin-top: 0px;
+      max-width: 100%;
+      padding: 170px 109px;
+      
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      
+    }
+
+    .images-heroSection img:nth-child(1) {
+      display: block;
+      width: 570px; 
+      height: 637px;
+      transform: rotate(-1.39deg);
+      position: absolute;
+      top: 0px;
+      left: 700px;
+    }
+    .images-heroSection img:nth-child(2) {
+      display: flex;
+      width: 190px;
+      /* height: 216px; */
+      position: absolute;
+      top: 25px;
+      left: 700px;
+    }
+    .images-heroSection img:nth-child(3) {
+      display: flex;
+      width: 190px;
+      /* height: 193px; */
+      position: absolute;
+      top: 457px;
+      right: 170px;
+    }
+    
+    .buttonA {
+      border: none;
+      border-radius: 0px;
+      width: 150px;
+      height: 52px;
+  }
+  
+  .buttonB {
+      background-color: var(--color-background); /* Ajusta el color principal del botón */
+      color: var(--color-botton-letters-dark);
+      border: none;
+      border-radius: 0px;
+      width: 150px;
+      height: 52px;
+  }
+
+    
     
     
     .serviceSection .serviceCard {
@@ -554,6 +616,6 @@ header {
         width: 80px;
         height: 80px;
       }
-
+    }
 
   }

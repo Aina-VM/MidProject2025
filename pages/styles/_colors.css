@@ -29,4 +29,5 @@ And also in the html file with: background-color: var(--color-primary-default);
     --color-texts: #6B708D;
     --color-text-white: #F4F6FC;
     --color-rectangle-service: #FFFFFF;
+    --color-botton-letters-dark: #6B708D;
 }
