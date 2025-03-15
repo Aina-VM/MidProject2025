@@ -8,9 +8,7 @@
 
 /* Mobile first */
 body {
-    background-color: var(--color-background); /* Un color neutro de fondo, ajusta según tu diseño */
-    color: var(--color-titles); 
-    line-height: 1.6;
+    background-color: var(--color-background);
     margin: 0px;
     padding: 0px;
   }
@@ -20,6 +18,7 @@ body {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-bold);
     font-size: 24px;
+    color: var(--color-titles);
   }
   
   h2 {
@@ -33,18 +32,21 @@ body {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-bold);
     font-size: 18px;
+    color: var(--color-titles);
   }
   
   h4 {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-bold);
     font-size: 16px;
+    color: var(--color-titles);
   }
 
   p {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-regular);
     font-size: 12px;
+    color: var(--color-texts);
   }
 
   a {
@@ -54,7 +56,7 @@ body {
     font-family: var(--font-roboto);
   }
 
-  /* HEADER*/
+/* HEADER*/
 header {
     display: flex;
     justify-content: space-between;
@@ -119,21 +121,21 @@ header {
       border-radius: 5px;
       width: 100%; /* Los botones ocupan todo el ancho en móviles */
   }
-  
 
-
-
-.images-heroSection img:nth-child(1),
-.images-heroSection img:nth-child(2),
-.images-heroSection img:nth-child(3) {
-    display: none; /* Hide the second and third images on mobile */
+.images-heroSection {
+  display: none;
 }
+/* .xulo,
+.targeta,
+.dit {
+    display: none;
+} */
 
 
 
 /* CLIENT LOGOS */
 .clientSection {
-    margin-top: 0px;
+    margin-top: 10px;
     padding: 10px 0;
 }
 
@@ -144,13 +146,10 @@ header {
     gap: 20px;
   /*   overflow-x: auto; Allows scrolling on small screens */
     white-space: nowrap;
-    padding: 5px 5px;
 }
 
 .clientLogos img {
-    height: auto; /* Keep logos uniform */
-    width: 13vw;
-    filter: grayscale(100%); /* Optional: Make logos gray */
+  filter: grayscale(100%); /* Optional: Make logos gray */
 }
 
 
@@ -160,17 +159,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 5px;
     padding: 5px 5px;
-    h {
-      display: flex;
-      justify-content: left;
-    }
 }
 
 .projectCards {
     display: flex;
+    flex-grow: 2;
     flex-direction: row;   
     overflow-x: auto; /* Allows scrolling on small screens */
     white-space: nowrap;
@@ -185,30 +181,47 @@ header {
     display: flex;
     flex-direction: column;
     width: 150px;
-    p {
-      display: flex;
-      word-break: break-word;
-      white-space: normal;
-      align-self: center; 
-    }
+    background-color: var(--color-rectangle-service);
     img {
+      display: flex;
       width: 150px;
       height: 105.88px;
-      margin-bottom: 10px;
+      height: 100%;
+      object-fit: cover;
+
     }
-    button {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      margin-top: auto;
-      width: 130px;
-      margin-bottom: 10px;
-      align-self: center;
-    }
+
   }
+
+  .text-card {
+    word-break: break-word;
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: flex-start;
+    padding: 2.08vw 2.08vw; /* 30px / 1440px * 100 */ 
+    gap: 10px;
+  }
+
+  .text-card h3,
+  .text-card p {
+    gap: 10px;
+  }
+
+  .text-card a {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-start;
+  }
+
+  
 /* TESTIMONIAL SECTION */
 .TestimonialSection {
-    padding: 20px 20px;
+    margin: 52.85vw 60px;
     text-align: center;
     background-color: #292E47;
     color: var(--color-text-white);
@@ -283,7 +296,7 @@ header {
   gap: 5px;
 }
 
-.serviceSection .services {
+.services {
   display: flex;
   flex-direction: row;
   overflow-x: auto; /* Allows scrolling on small screens */
@@ -293,7 +306,7 @@ header {
   width: 90%; 
 }
 
-.serviceSection .serviceCard {
+.serviceCard {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -330,7 +343,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-self: flex-start; 
+    align-self: flex-start;
   }
 }
 
@@ -407,19 +420,20 @@ header {
 
 
   /* Tablets */
-  @media (min-width: 400px) {
+  /* @media (min-width: 400px) {
     body {
       font-size: 16px;
     }
-  }
+  } */
   
   /* Desktops */
-  @media (min-width:500px) {
+
+  @media (min-width: 100px) {
 
   body {
-    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
   }
-
   h1 {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-bold);
@@ -447,7 +461,7 @@ header {
   p {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-regular);
-    font-size: var(--caption-1-font-size);
+    font-size: var(--body-hero-font-size);
   }
   a {
     color: var(--color-bottons);
@@ -510,9 +524,7 @@ header {
       color: var(--color-texts);
       font-weight: var(--font-weight-medium);
       height: 22px;
-    }
-  
-    
+    } 
   
     header .contact-button {
       display: flex;
@@ -538,54 +550,59 @@ header {
     /* HERO SECTION */
 
     .heroSection {
-      padding: 0px 0px;
+      margin: 100px 0px 200px 0px;
+      padding: 0px 170px 0px 170px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-start;
-      position: relative;
+      align-items: center;
+      flex-wrap: nowrap;
+      height: 650px;
+      gap: 0px;
       }
-    .texts-heroSection {
-      margin-bottom: 0px;
-      margin-top: 0px;
-      max-width: 100%;
-      padding: 170px 109px;
-      
-    }
 
-    .content-container {
+    .text-heroSection {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: flex-start;
+      flex: 1;
+      max-width: 46%;
+      gap: 30px;
+      position: relative;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+  
+    }
+    .images-heroSection {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
       align-items: center;
-      gap: 0px;
-      
+      position: relative;
     }
-
-    .images-heroSection img:nth-child(1) {
-      display: block;
-      width: 570px; 
-      height: 637px;
+    .xulo {
+      width: 39.58vw;
+      /* width: 39.58%;  */
+      /* height: 637px; */
       transform: rotate(-1.39deg);
-      position: absolute;
-      top: 0px;
-      left: 700px;
     }
-    .images-heroSection img:nth-child(2) {
-      display: flex;
-      width: 190px;
+    .targeta {
+      position: absolute;
+      width: 13.19vw;
       /* height: 216px; */
-      position: absolute;
-      top: 25px;
-      left: 700px;
+      top: 0%;
+      left: 0%;
+      padding: 0px;
     }
-    .images-heroSection img:nth-child(3) {
-      display: flex;
-      width: 190px;
+    .dit {
+      width: 13.19vw;
       /* height: 193px; */
       position: absolute;
-      top: 457px;
-      right: 170px;
+      bottom: 0px;
+      right: 0px;
     }
     
     .buttonA {
@@ -593,29 +610,110 @@ header {
       border-radius: 0px;
       width: 150px;
       height: 52px;
-  }
+    }
   
-  .buttonB {
-      background-color: var(--color-background); /* Ajusta el color principal del botón */
-      color: var(--color-botton-letters-dark);
-      border: none;
-      border-radius: 0px;
-      width: 150px;
-      height: 52px;
-  }
+    .buttonB {
+        background-color: var(--color-background); /* Ajusta el color principal del botón */
+        color: var(--color-botton-letters-dark);
+        border: none;
+        border-radius: 0px;
+        width: 150px;
+        height: 52px;
+    }
 
+    /* CLIENT SECTION */
+    .clientSection {
+      margin: 0px 0px 200px 0px;
+      padding: 0px 0px;
+    }
+
+    .clientLogos {
+      margin: 0px 0px 0px 0px;
+      padding: 0px 170px 0px 170px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5.49vw; /* 79px / 1440px * 100 */
+      height: 96px;
+      width: 100%; /* Adjusted to take full width */
+    }
     
+
+    .airbnb {
+      width: 7.13vw; /* 102.67px / 1440px * 100 */
+      /* height: 32.02px; */
+    }
+
+    .google {
+      width: 6.67vw; /* 96px / 1440px * 100 */
+      /* height: 32px; */
+    }
+
+    .microsoft {
+      width: 8.54vw; /* 123px / 1440px * 100 */
+      /* height: 26px; */
+    }
+
+    .fedex {
+      width: 7.01vw; /* 101px / 1440px * 100 */
+      /* height: 30px; */
+    }
+
+    .amazon {
+      width: 7.22vw; /* 104px / 1440px * 100 */
+      /* height: 32px; */
+    }
+
+
+    /* PROJECTS SECTION */
+    .projectSection {
+      padding: 0px 11.81vw; /* 170px / 1440px * 100 */
+      gap: 2.78vw; /* 40px / 1440px * 100 */
+      }
+
+    .projectCards {
+      gap: 2.78vw; /* 40px / 1440px * 100 */
+      padding: 0px 0px;
+      width: 100%;
+      overflow-x: visible; /* Adjust overflow for desktop */
+      white-space: normal; 
+    }
+
+    .projectCard {
+      width: 23.61vw; /* 340px / 1440px * 100 */
+      height: 30.56vw; /* 440px / 1440px * 100 */
+      min-height: 280px;
+      text-align: left;
+      img {
+        width: 23.61vw; /* 340px / 1440px * 100 */
+        height: 16.67vw; /* 240px / 1440px * 100 = 16.67vw*/
     
-    
-    .serviceSection .serviceCard {
+      }
+    }
+    .text-card {
+      padding: 2.08vw 2.08vw; /* 30px / 1440px * 100 */ 
+      gap: 10px;
+      p {
+        font-size: var(--headline-text-font-size);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .serviceCard {
       padding: 1px 10px 5px 5px;
       background-color: var(--color-rectangle-service);
       width: 340px;
       height: 380px;
-      img {
-        width: 80px;
-        height: 80px;
-      }
     }
-
   }

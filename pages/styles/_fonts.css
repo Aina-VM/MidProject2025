@@ -22,15 +22,15 @@ caption 2: roboto Medium 13
   --font-weight-medium: 500;
   --font-weight-regular: 400;
 
-  --h1-font-size: 60px;
-  --h2-font-size: 50px;
-  --h3-font-size: 40px;
-  --h4-font-size: 24px;
-  --body-intro-font-size: 22px;
-  --body-hero-font-size: 20px;
-  --headline-text-font-size: 17px;
-  --caption-1-font-size: 15px;
-  --caption-2-font-size: 13px;
+  --h1-font-size: 3.75rem;
+  --h2-font-size: 3.125rem;
+  --h3-font-size: 2.5rem;
+  --h4-font-size: 1.5rem; /* 24px */
+  --body-intro-font-size: 1.375rem; /* 22px */
+  --body-hero-font-size: 1.25rem; /* 20px */
+  --headline-text-font-size: 1.0625rem; /* 17px */
+  --caption-1-font-size: 0.9375rem; /* 15px */
+  --caption-2-font-size: 0.8125rem; /* 13px */
 }
 
 /* h1 {
