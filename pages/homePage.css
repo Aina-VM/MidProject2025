@@ -222,65 +222,59 @@ header {
 /* TESTIMONIAL SECTION */
 .TestimonialSection {
     margin: 52.85vw 60px;
-    text-align: center;
-    background-color: #292E47;
-    color: var(--color-text-white);
-    position: relative;
+    padding: 8.33vw 11.81vw; /* 120px 170px /1440px */
     display: flex;
     flex-direction: column;
-      
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--color-neutral-dark);
+    position: relative;
+    height: auto; /*43.19vw */
+    width: 91.67vw; /* 1320px/1440px */
+        
+    h3 {
+      color: var(--color-text-white);
+    }
+
+    background-image: url('../projectAssets/testimonial-section/orbit.png');
+    background-size: cover; /* Ajustamos el tamaño del fondo */
+    background-position: center; /* Centramos la imagen */
+    background-repeat: no-repeat; /* Evitamos repeticiones */
     
 }
 .yellow-text {
-  color: var(--color-yellow-questions);
+  color: var(--color-yellow-questions); 
   font-weight: var(--font-weight-medium);
- 
 }
 .client1 {
   color:var(--color-client1);
-  
 }
 .source {
   font-size: 10px;
 }
-.TestimonialSection .TestimonialBackground {
-    background-image: url('../projectAssets/testimonial-section/orbit.png');
-    background-size: cover; /* Adjust background size */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-}
-.TestimonialSection div {
-    margin-bottom: 20px;
-}
-
-.TestimonialSection img { 
-    width: 100%;
-    height: auto;
-    display: block;
-
-}
 
 .TestimonialSection .client-info {
-  display: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  align-self: left;
   display: flex;
   flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+  align-self: center;
+  position: relative;
+
 }
 
 
 .TestimonialSection .client-info img {
-    width: 50px;
-    height: auto;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 30px;
-    right: 20px
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  left: -60px;
 }
 
 
-.TestimonialSection .emojis img {
+.emojis img {
     display: none;
 }
 
@@ -682,8 +676,8 @@ header {
 
     .projectCard {
       width: 23.61vw; /* 340px / 1440px * 100 */
-      height: 30.56vw; /* 440px / 1440px * 100 */
-      min-height: 280px;
+      height: 30.83vw; /* 444px / 1440px * 100 */
+      min-height: 350px;
       text-align: left;
       img {
         width: 23.61vw; /* 340px / 1440px * 100 */
