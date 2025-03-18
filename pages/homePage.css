@@ -61,11 +61,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 3.61vw 11.81vw 0px 11.81vw; /* 170px / 1440px * 100 */
   }
   
   header .logo {
-    flex: 1;
     width: auto; /* 120 px? Ajusta al tamaño que tenga el logo */
   }
   
@@ -113,8 +112,11 @@ header {
   
   
 /*HERO SECTION */
- 
-  .buttonA, .buttonB {
+.heroSection {
+  margin: 6.94vw 0px 0px 0px; /* 100px / 1440px * 100 */
+}
+
+.buttonA, .buttonB {
       background-color: var(--color-bottons); /* Ajusta el color principal del botón */
       color: var(--color-rectangle-service);
       border: none;
@@ -135,17 +137,19 @@ header {
 
 /* CLIENT LOGOS */
 .clientSection {
-    margin-top: 10px;
-    padding: 10px 0;
+  margin: 9.03vw 0px 13.89vw 0px; /* 130px 0px 200px 0px; */
+  padding: 0px 0px;
 }
 
 .clientLogos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 11.81vw; /* 170px / 1440px * 100 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   /*   overflow-x: auto; Allows scrolling on small screens */
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .clientLogos img {
@@ -161,7 +165,7 @@ header {
     justify-content: center;
     align-items: flex-start;
     gap: 5px;
-    padding: 5px 5px;
+    padding: 0px 11.81vw; /* 170px / 1440px * 100 */
 }
 
 .projectCards {
@@ -205,42 +209,39 @@ header {
     gap: 10px;
   }
 
-  .text-card h3,
-  .text-card p {
-    gap: 10px;
-  }
-
   .text-card a {
     margin-top: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-self: flex-start;
+    text-decoration: none;
   }
 
   
 /* TESTIMONIAL SECTION */
 .TestimonialSection {
-    margin: 52.85vw 60px;
-    padding: 8.33vw 11.81vw; /* 120px 170px /1440px */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+    margin: 13.89vw 4.17vw; /* 200px 60px /1440px */
     background-color: var(--color-neutral-dark);
     position: relative;
-    height: auto; /*43.19vw */
-    width: 91.67vw; /* 1320px/1440px */
-        
-    h3 {
-      color: var(--color-text-white);
-    }
-
+    height: 43.19vw; /*43.19vw */
+    
     background-image: url('../projectAssets/testimonial-section/orbit.png');
     background-size: cover; /* Ajustamos el tamaño del fondo */
     background-position: center; /* Centramos la imagen */
     background-repeat: no-repeat; /* Evitamos repeticiones */
     
+   }
+  .letters{
+    padding: 7.64vw 8.33vw; /* 110px 120px /1440px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;  
+    height: 100%; 
+    h3 {
+      color: var(--color-text-white);
+    }
 }
 .yellow-text {
   color: var(--color-yellow-questions); 
@@ -266,7 +267,7 @@ header {
 
 .TestimonialSection .client-info img {
   width: 50px;
-  height: auto;
+  height: 50px;
   border-radius: 50%;
   position: absolute;
   bottom: -5px;
@@ -281,13 +282,12 @@ header {
 
 /* SERVICE SECTION */
 .serviceSection {
-  padding: 50px 10px;
-  position: relative;
+  padding: 0px 11.81vw; /* 170px / 1440px * 100 */
+  gap: 4.86vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 5px;
 }
 
 .services {
@@ -295,54 +295,62 @@ header {
   flex-direction: row;
   overflow-x: auto; /* Allows scrolling on small screens */
   white-space: nowrap;
-  padding: 5px 0px;
-  gap: 10px;
-  width: 90%; 
+  gap: 2.78vw; /* 40px / 1440px * 100 */
+  padding: 0px 0px;
 }
 
 .serviceCard {
-  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 20px 15px;
+  padding: 2.78vw 2.08vw; /* y40 x30px / 1440px * 100 */
   background-color: var(--color-rectangle-service);
   width: 190px;
   height: 212px;
-  gap: 1px;
-  p {
-    white-space: normal; 
-    word-break: break-word;
-  }
-  div {
-    display: flex;
-    align-self: flex-start;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 49.6%;
-    background-color: var(--color-neutral-lightBlue);
-
-    img {
-      display: flex;
-      align-self: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      padding: 10px;
-    }
-  }
-  a {
-    position: absolute;
-    bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-self: flex-start;
-  }
 }
+
+.services .serviceCard .icon-round {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  width:auto;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-neutral-lightBlue);
+}
+  
+
+.icon-round img {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.text-card-service {
+  padding: 2.08vw 0px 0px 0px;
+  word-break: break-word;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+
+.text-card-service a {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
 
 /* CTA section */
 .CTASection div {
+  margin: 13.89vw 4.17vw 9.03vw; /* 200px 60px 130px /1440px */;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -350,6 +358,10 @@ header {
   background-color: var(--color-yellow-questions);
   gap: 15px;
   padding: 30px 0px;
+  p {
+    color: var(--color-titles);
+  }
+  
 }
 .CTASection form {
   display: flex;
@@ -357,7 +369,6 @@ header {
   flex-direction: column;
   align-items: left;
   padding: 10px;
-  border-radius: 5px;
   width: 90vw;
 }
 
@@ -373,8 +384,8 @@ header {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: blue;
-  color: white;
+  background-color: var(--color-bottons);
+  color: var(--color-text-white);
   cursor: pointer;
 }
 
@@ -391,7 +402,7 @@ header {
   align-items: flex-start;
 }
 
-.footer div ul {
+.rightside ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -401,12 +412,15 @@ header {
   li {
     list-style: none;
     height: 15px;
-  }
-}
+    a {
+      text-decoration: none;
+      color: var(--color-texts)
+    }
+}}
 
-.footer p {
+.leftside p {
   font-size: 12px;
-  font-style: italic;
+  font-style: normal; 
 }
 
 
@@ -425,7 +439,6 @@ header {
   @media (min-width: 100px) {
 
   body {
-    height: 100vh;
     width: 100vw;
   }
   h1 {
@@ -457,6 +470,7 @@ header {
     font-weight: var(--font-weight-regular);
     font-size: var(--body-hero-font-size);
   }
+
   a {
     color: var(--color-bottons);
     font-weight: var(--font-weight-regular);
@@ -470,17 +484,15 @@ header {
       width: 100vw;
       display: flex;
       justify-content: space-between;
-
       align-self: center;
-      padding: 0px;
+      padding: 3.61vw 11.81vw 0px 11.81vw; /* 52px 170px / 1440px * 100 */
       position: relative;
-      margin: 0px;
     }
     
     header .logo {
-      position: absolute;
-      left: 170.64px;
-      top: 86.91px;
+      /* position: absolute;
+      left: 11.81vw;  
+      top: 86.91px; */
       img {
         width: 60.53px;
         height: 18.46px; 
@@ -492,7 +504,6 @@ header {
       flex-direction: row;
       justify-content: center;
       flex: 2;
-      margin-top: 85px
     }
 
 
@@ -527,11 +538,9 @@ header {
       border-radius: 0%;
       justify-content: center;
       align-items: center;
-      position: absolute;
+      /* position: absolute;
       right: 170.65px;
-      top: 70px;
-      margin: 0px 0px;
-      padding: 0px 0px;
+      top: 70px; */
       font-weight: var(--font-weight-regular);
       font-size: var(--headline-text-font-size);
       font-family: var(--font-roboto);
@@ -544,8 +553,8 @@ header {
     /* HERO SECTION */
 
     .heroSection {
-      margin: 100px 0px 200px 0px;
-      padding: 0px 170px 0px 170px;
+      margin: 6.94vw 0px 0px 0px; /* 100px / 1440px * 100 */
+      padding: 0px 11.81vw; /* 170px / 1440px * 100 */
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -576,9 +585,11 @@ header {
       justify-content: flex-end;
       align-items: center;
       position: relative;
+      max-width: 570px;
     }
     .xulo {
       width: 39.58vw;
+      max-width: 570px;
       /* width: 39.58%;  */
       /* height: 637px; */
       transform: rotate(-1.39deg);
@@ -586,16 +597,18 @@ header {
     .targeta {
       position: absolute;
       width: 13.19vw;
+      max-width: 190px;
       /* height: 216px; */
-      top: 0%;
+      top: 15px;
       left: 0%;
       padding: 0px;
     }
     .dit {
       width: 13.19vw;
       /* height: 193px; */
+      max-width: 190px;
       position: absolute;
-      bottom: 0px;
+      bottom: -17px;
       right: 0px;
     }
     
@@ -617,13 +630,13 @@ header {
 
     /* CLIENT SECTION */
     .clientSection {
-      margin: 0px 0px 200px 0px;
+      margin: 9.03vw 0px 13.89vw 0px; /* 130px 0px 200px 0px; */
       padding: 0px 0px;
     }
 
     .clientLogos {
       margin: 0px 0px 0px 0px;
-      padding: 0px 170px 0px 170px;
+      padding: 0px 11.81vw; /* 170px / 1440px * 100 */
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -663,7 +676,7 @@ header {
     /* PROJECTS SECTION */
     .projectSection {
       padding: 0px 11.81vw; /* 170px / 1440px * 100 */
-      gap: 2.78vw; /* 40px / 1440px * 100 */
+      gap: 4.86vw; /* 70px / 1440px * 100 */
       }
 
     .projectCards {
@@ -693,21 +706,131 @@ header {
       }
     }
 
+      /* TESTIMONIAL SECTION */
+    .TestimonialSection {
+      position: relative;
+    }
+    .emojis {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 51px 61px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:100%;
+        height: 100%;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+  
 
+    .emojis img {
+      width: 150px;
+      height:150px;
+      display: flex;
+  }
 
-
-
-
-
-
-
-
-
+ /* SERVICE SECTION */
+  .serviceSection {
+      gap: 4.86vw; 
+      padding: 0px 11.81vw; /* 170px / 1440px * 100 */
+    }
 
     .serviceCard {
-      padding: 1px 10px 5px 5px;
+      padding: 2.08vw 2.08vw;
       background-color: var(--color-rectangle-service);
-      width: 340px;
-      height: 380px;
+      width: 23.61vw; /* 340px / 1440px * 100 */
+      height: 26.39vw; /* 380px / 1440px * 100 */
+      min-height: 350px;
     }
+
+    .services .serviceCard .icon-round {
+      width: 70px;
+      height: 80px;
   }
+
+/* CTA section */
+.CTASection div {
+  padding: 9.44vw; /* 136px 60px 130px /1440px */
+  height: 34.72vw; /* 500px / 1440px * 100 */
+  justify-content: space-between;
+}
+
+.CTASection form {
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px;
+  width: 601px;
+}
+
+.CTASection input[type="email"] {
+  padding: 10px;
+  border: 0px;
+  border-radius: 0px;
+  flex: 1;
+  font-size: var(--font-weight-regular);
+  color: var(--color-titles);
+}
+
+.CTASection button {
+  padding: 15px 37px;
+  border: none;
+  border-radius: 0px;
+  width: 198px;
+  height: 80px;
+  font-size: var(--font-weight-regular);
+}
+
+/* FOOTER */
+.footer {
+  padding: 2.08vw 11.81vw 6.94vw; /* 30px 170px 100px / 1440px */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 16.80vw; /* 242px / 1440px * 100 */
+}
+
+
+
+.rightside ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 435px;
+  gap:75px;
+  align-items: flex-start;
+  li {
+    list-style: none;
+    height: 15px;
+    a {
+      text-decoration: none;
+      color: var(--color-texts)
+    }
+}}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.leftside p {
+  font-size: var(--headline-text-font-size);
+  font-style: normal; 
+}
+ .leftside img {
+  width: 98.38px;
+  height: 30px;
+}
+
+
+
+
+}
