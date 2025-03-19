@@ -112,21 +112,71 @@ header {
 /* PROJECT DESCRIPTION */
 .simplify {
     margin: 9.72vw 0px 0px 0px; /* 140px / 1440px * 100 */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5px;
     padding: 0px 11.81vw; /* 170px / 1440px * 100 */
 }
+
+.simplify-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: flex-start;
+  
+}
+
+.simplify-titles h1 {
+  margin: 0px 0px 26px 0px; /* 30px / 1440px * 100 */
+}
+
+.text-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0px 0px 80px 0px;/* 30px / 1440px * 100 */
+}
+
+.ui-design {
+  color: var(--color-texts);
+  font-weight: var(--font-weight-medium);
+}
+
+.simplify-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center aligns the text properly */
+  gap: 10px;
+}
+
+.simplify-data p {
+  color: var(--color-titles);
+  font-weight: var(--font-weight-regular);
+}
+
+.simplify-data data {
+  color: var(--color-texts);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-roboto);
+  font-size: var(--body-hero-font-size);
+}
+
 
 .simplify-images img {
     width: 100%;
     height: 444px;
     object-fit: cover;
+    margin: 0px 0px 73px 0px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-
+.simplify-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px 45px 0px;
+    margin: 0px 0px 69px 0px;
+}
 /* other PROJECTS SECTION */
 
 .otherProjects {
