@@ -1,0 +1,315 @@
+/* Margins and pagging reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+/* Mobile first */
+body {
+    background-color: var(--color-background);
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* Letter types */
+  h1 {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-bold);
+    font-size: 24px;
+    color: var(--color-titles);
+  }
+  
+  h2 {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-bold);
+    font-size: 20px;
+    color: var(--color-titles);
+  }
+  
+  h3 {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-bold);
+    font-size: 18px;
+    color: var(--color-titles);
+  }
+  
+  h4 {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-bold);
+    font-size: 16px;
+    color: var(--color-titles);
+  }
+
+  p {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+    color: var(--color-texts);
+  }
+
+  a {
+    color: var(--color-bottons);
+    font-weight: var(--font-weight-regular);
+    font-size: 10px;
+    font-family: var(--font-roboto);
+  }
+
+/* HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.61vw 11.81vw 0px 11.81vw; /* 170px / 1440px * 100 */
+  }
+  
+  header .logo {
+    width: auto; /* 120 px? Ajusta al tamaño que tenga el logo */
+  }
+  
+  header .menu {
+    display: none; /* Oculta el menú en móviles, usaremos un icono de hamburguesa */
+  }
+
+  header .menu ul {
+    list-style: none;
+    padding: 0px;
+  }
+  
+  header .menu ul li {
+    margin: 15px 0;
+  }
+  
+  header .menu ul li a {
+    text-decoration: none;
+  }
+
+  header .menu.active {
+    display:block;
+  }
+
+  header .contact-button {
+    display: none;
+  }
+  /* Estilos del icono de hamburguesa */
+  /* Icono de hamburguesa con tres líneas */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu span {
+    width: 100%;
+    height: 4px;
+    background-color: #333; /* Color de las barras */
+    border-radius: 5px; /* Esquinas redondeadas para un mejor estilo */
+  }
+
+/* CONTACT US */
+.contact {
+    margin: 9.72vw 0px 0px 0px; /* 140px / 1440px * 100 */
+    padding: 0px 11.81vw; /* 170px / 1440px * 100 */
+}
+
+
+
+
+
+ /* FOOTER */
+ .footer {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .rightside ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 4px;
+    align-items: center;
+    li {
+      list-style: none;
+      height: 15px;
+      a {
+        text-decoration: none;
+        color: var(--color-texts)
+      }
+  }}
+  
+  .leftside p {
+    font-size: 12px;
+    font-style: normal; 
+  }
+
+
+  /* Desktops */
+
+  @media (min-width: 100px) {
+
+    body {
+      width: 100vw;
+    }
+    h1 {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-bold);
+      font-size: var(--h1-font-size);
+    }
+    
+    h2 {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-bold);
+      font-size: var(--h2-font-size);
+    }
+    
+    h3 {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-bold);
+      font-size: var(--h3-font-size);
+    }
+    
+    h4 {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-bold);
+      font-size: var(--h4-font-size);
+    }
+  
+    p {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-regular);
+      font-size: var(--body-hero-font-size);
+    }
+  
+    a {
+      color: var(--color-bottons);
+      font-weight: var(--font-weight-regular);
+      font-size: var(--headline-text-font-size);
+      font-family: var(--font-roboto);
+    }
+  
+     
+      header {
+        height: 122px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        padding: 3.61vw 11.81vw 0px 11.81vw; /* 52px 170px / 1440px * 100 */
+        position: relative;
+      }
+      
+      header .logo {
+        /* position: absolute;
+        left: 11.81vw;  
+        top: 86.91px; */
+        img {
+          width: 60.53px;
+          height: 18.46px; 
+        }
+      }
+      
+      header .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex: 2;
+      }
+  
+  
+      header .hamburger-menu {
+        display: none;
+      }
+  
+      header .menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        width: 295px;
+      }
+  
+      header .menu ul li {
+        margin: 0;
+        align-self: center;
+        height: 22px;
+        
+       }
+  
+      header .menu ul li a {
+        color: var(--color-texts);
+        font-weight: var(--font-weight-medium);
+        height: 22px;
+      } 
+    
+      header .contact-button {
+        display: flex;
+        width: 150px;
+        height: 52px;
+        border-radius: 0%;
+        justify-content: center;
+        align-items: center;
+        /* position: absolute;
+        right: 170.65px;
+        top: 70px; */
+        font-weight: var(--font-weight-regular);
+        font-size: var(--headline-text-font-size);
+        font-family: var(--font-roboto);
+        background-color: var(--color-bottons);
+        color: var(--color-rectangle-service);
+        border: none;
+      }
+
+
+
+       /* FOOTER */
+  .footer {
+    padding: 2.08vw 11.81vw 6.94vw; /* 30px 170px 100px / 1440px */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 16.80vw; /* 242px / 1440px * 100 */
+  }
+  
+  
+  
+  .rightside ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 435px;
+    gap:75px;
+    align-items: flex-start;
+    li {
+      list-style: none;
+      height: 15px;
+      a {
+        text-decoration: none;
+        color: var(--color-texts)
+      }
+  }}
+  
+  .leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .leftside p {
+    font-size: var(--headline-text-font-size);
+    font-style: normal; 
+  }
+   .leftside img {
+    width: 98.38px;
+    height: 30px;
+  }
+}  
