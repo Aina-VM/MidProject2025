@@ -11,6 +11,7 @@ body {
     background-color: var(--color-background);
     margin: 0px;
     padding: 0px;
+    width: 100vw;
   }
 
   /* Letter types */
@@ -62,10 +63,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3.61vw 11.81vw 0px 11.81vw; /* 170px / 1440px * 100 */
+    width: 100vw;
   }
   
   header .logo {
-    width: auto; /* 120 px? Ajusta al tamaño que tenga el logo */
+    width: auto; 
   }
   
   header .menu {
@@ -114,6 +116,16 @@ header {
 /*HERO SECTION */
 .heroSection {
   margin: 6.94vw 0px 0px 0px; /* 100px / 1440px * 100 */
+  padding: 0px 11.81vw; /* 170px / 1440px * 100 */
+  height: auto;
+  }
+
+.text-heroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.08vw;
+  position: relative;
 }
 
 .buttonA, .buttonB {
@@ -136,6 +148,7 @@ header {
 
 
 /* CLIENT LOGOS */
+
 .clientSection {
   margin: 9.03vw 0px 13.89vw 0px; /* 130px 0px 200px 0px; */
   padding: 0px 0px;
@@ -145,15 +158,45 @@ header {
   margin: 0px 0px 0px 0px;
   padding: 0px 11.81vw; /* 170px / 1440px * 100 */
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  /*   overflow-x: auto; Allows scrolling on small screens */
-  white-space: nowrap;
+  gap: 5.49vw; /* 79px / 1440px * 100 */
+  height: auto;
+  width: 100%; /* Adjusted to take full width */
 }
 
+
+.airbnb {
+  width: 7.13vw; /* 102.67px / 1440px * 100 */
+  /* height: 32.02px; */
+}
+
+.google {
+  width: 6.67vw; /* 96px / 1440px * 100 */
+  /* height: 32px; */
+}
+
+.microsoft {
+  width: 8.54vw; /* 123px / 1440px * 100 */
+  /* height: 26px; */
+}
+
+.fedex {
+  width: 7.01vw; /* 101px / 1440px * 100 */
+  /* height: 30px; */
+}
+
+.amazon {
+  width: 7.22vw; /* 104px / 1440px * 100 */
+  /* height: 32px; */
+}
+
+
+
+
 .clientLogos img {
-  filter: grayscale(100%); /* Optional: Make logos gray */
+  filter: grayscale(100%);
 }
 
 
@@ -162,9 +205,9 @@ header {
 .projectSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 5px;
+    gap: 4.86vw;
     padding: 0px 11.81vw; /* 170px / 1440px * 100 */
 }
 
@@ -176,12 +219,12 @@ header {
     white-space: nowrap;
     padding: 5px 5px;
     gap: 10px;
-    width: 90%; 
+    width: 100%; 
 }
 
 .projectCard {
     padding: 0px;
-    text-align: center;
+    text-align: flex-start;
     display: flex;
     flex-direction: column;
     width: 150px;
@@ -192,9 +235,7 @@ header {
       height: 105.88px;
       height: 100%;
       object-fit: cover;
-
     }
-
   }
 
   .text-card {
@@ -230,8 +271,8 @@ header {
     background-size: cover; /* Ajustamos el tamaño del fondo */
     background-position: center; /* Centramos la imagen */
     background-repeat: no-repeat; /* Evitamos repeticiones */
-    
    }
+
   .letters{
     padding: 7.64vw 8.33vw; /* 110px 120px /1440px */
     display: flex;
@@ -266,12 +307,12 @@ header {
 
 
 .TestimonialSection .client-info img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: absolute;
-  bottom: -5px;
-  left: -60px;
+  bottom: -1px;
+  left: -35px;
 }
 
 
@@ -286,33 +327,36 @@ header {
   gap: 4.86vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
+  width: 100%;
 }
 
 .services {
   display: flex;
-  flex-direction: row;
-  overflow-x: auto; /* Allows scrolling on small screens */
+  flex-grow: 2;
+  flex-direction: row;   
+  overflow-x: scroll; /* Allows scrolling on small screens */
   white-space: nowrap;
-  gap: 2.78vw; /* 40px / 1440px * 100 */
   padding: 0px 0px;
+  gap: 2.78vw;
+  width: 100%;
 }
 
 .serviceCard {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   padding: 2.78vw 2.08vw; /* y40 x30px / 1440px * 100 */
   background-color: var(--color-rectangle-service);
-  width: 190px;
-  height: 212px;
+  width: 180px;
 }
 
 .services .serviceCard .icon-round {
   display: flex;
   align-self: flex-start;
   justify-content: center;
-  width:auto;
+  width: 60px;
   height: 60px;
   border-radius: 50%;
   background-color: var(--color-neutral-lightBlue);
@@ -370,6 +414,7 @@ header {
   align-items: left;
   padding: 10px;
   width: 90vw;
+  gap: 5px;
 }
 
 .CTASection input[type="email"] {
@@ -395,7 +440,7 @@ header {
 
 /* FOOTER */
 .footer {
-  padding: 10px 10px;
+  padding: 3.61vw 11.81vw;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -407,7 +452,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 4px;
+  gap: 9px;
   align-items: center;
   li {
     list-style: none;
@@ -428,15 +473,271 @@ header {
 
 
   /* Tablets */
-  /* @media (min-width: 400px) {
+  @media (min-width: 500px) {
     body {
       font-size: 16px;
     }
-  } */
+
+    h1 {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-bold);
+      font-size: 40px;
+    }
+    
+    h2 {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-bold);
+      font-size: 30px;
+    }
+    
+    h3 {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-bold);
+      font-size: 25px;
+    }
+    
+    h4 {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-bold);
+      font-size: 20px;
+    }
+  
+    p {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-regular);
+      font-size: 16px;
+    }
+  
+    a {
+      color: var(--color-bottons);
+      font-weight: var(--font-weight-regular);
+      font-size: var(--headline-text-font-size);
+      font-family: 12px;
+    }
+  
+    /* HERO SECTION */
+
+    .heroSection {
+      margin: 6.94vw 0px 0px 0px; /* 100px / 1440px * 100 */
+      padding: 0px 11.81vw; /* 170px / 1440px * 100 */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      height: auto;
+      gap: 0px;
+      }
+
+    .text-heroSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      flex: 1;
+      max-width: 46%;
+      gap: 30px;
+      position: relative;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+  
+    }
+    .images-heroSection {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      max-width: 570px;
+    }
+    .xulo {
+      width: 29.58vw;
+      max-width: 370px;
+      /* width: 39.58%;  */
+      /* height: 637px; */
+      transform: rotate(-1.39deg);
+    }
+    .targeta {
+      position: absolute;
+      width: 10.19vw;
+      max-width: 190px;
+      /* height: 216px; */
+      top: 15px;
+      left: 7.5vw;
+      padding: 0px;
+    }
+    .dit {
+      width: 10.19vw;
+      /* height: 193px; */
+      max-width: 190px;
+      position: absolute;
+      bottom: -17px;
+      right: 0px;
+    }
+    
+    .buttonA {
+      border: none;
+      border-radius: 0px;
+      width: 150px;
+      height: 52px;
+    }
+  
+    .buttonB {
+        background-color: var(--color-background); /* Ajusta el color principal del botón */
+        color: var(--color-botton-letters-dark);
+        border: none;
+        border-radius: 0px;
+        width: 150px;
+        height: 52px;
+    }
+
+     /* PROJECTS SECTION */
+     .projectSection {
+      padding: 0px 11.81vw; /* 170px / 1440px * 100 */
+      gap: 4.86vw; /* 70px / 1440px * 100 */
+      }
+
+    .projectCards {
+          gap: 2.78vw; /* 40px / 1440px * 100 */
+          padding: 0px 0px;
+          width: 100%;
+          overflow-x: auto; /* Allows horizontal scrolling */
+          white-space: nowrap; 
+        }
+
+    .projectCard {
+      width: 23.61vw; /* 340px / 1440px * 100 */
+      height: 30.83vw; /* 444px / 1440px * 100 */
+      min-height: 350px;
+      text-align: left;
+      img {
+        width: 23.61vw; /* 340px / 1440px * 100 */
+        height: 16.67vw; /* 240px / 1440px * 100 = 16.67vw*/
+    
+      }
+    }
+    .text-card {
+      padding: 2.08vw 2.08vw; /* 30px / 1440px * 100 */ 
+      gap: 10px;
+      p {
+        font-size: var(--headline-text-font-size);
+      }
+    }
+
+
+    /* TESTIMONI SECITON */
+    .emojis img {
+      display: none;
+  }
+
+  /* SERVICE SECTION */
+
+  .serviceSection {
+    gap: 4.86vw; 
+    padding: 0px 11.81vw; /* 170px / 1440px * 100 */
+  }
+
+  .serviceCard {
+    padding: 2.08vw 2.08vw;
+    background-color: var(--color-rectangle-service);
+    width: 23.61vw; /* 340px / 1440px * 100 */
+    height: 26.39vw; /* 380px / 1440px * 100 */
+    min-height: 350px;
+  }
+
+  .services .serviceCard .icon-round {
+    width: 70px;
+    height: 80px;
+}
+
+  /* CTA section */
+.CTASection div {
+  padding: 9.44vw; /* 136px 60px 130px /1440px */
+  height: 34.72vw; /* 500px / 1440px * 100 */
+  justify-content: space-between;
+}
+
+.CTASection form {
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px;
+  width: 501px;
+}
+
+.CTASection input[type="email"] {
+  padding: 10px;
+  border: 0px;
+  border-radius: 0px;
+  flex: 2;
+  font-size: var(--font-weight-regular);
+  color: var(--color-titles);
+}
+
+.CTASection button {
+  padding: 15px 37px;
+  border: none;
+  border-radius: 0px;
+  width: 150px;
+  height: 50px;
+  font-size: var(--font-weight-regular);
+}
+
+
+
+/* FOOTER */
+.footer {
+  padding: 2.08vw 11.81vw 0px; /* 30px 170px 100px / 1440px */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 16.80vw; /* 242px / 1440px * 100 */
+  margin: 0px;
+}
+
+
+
+.rightside ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 35.20vw;
+  gap:5.2vw;
+  align-items: flex-end;
+  li {
+    list-style: none;
+    height: 15px;
+    a {
+      text-decoration: none;
+      color: var(--color-texts)
+    }
+}}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.leftside p {
+  font-size: var(--headline-text-font-size);
+  font-style: normal; 
+}
+ .leftside img {
+  width: 98.38px;
+  height: 30px;
+}
+
+  }
   
   /* Desktops */
 
-  @media (min-width: 100px) {
+  @media (min-width: 1000px) {
 
   body {
     width: 100vw;
@@ -632,49 +933,12 @@ header {
     }
 
     /* CLIENT SECTION */
-    .clientSection {
-      margin: 9.03vw 0px 13.89vw 0px; /* 130px 0px 200px 0px; */
-      padding: 0px 0px;
-    }
 
     .clientLogos {
-      margin: 0px 0px 0px 0px;
-      padding: 0px 11.81vw; /* 170px / 1440px * 100 */
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      gap: 5.49vw; /* 79px / 1440px * 100 */
       height: 96px;
       width: 100%; /* Adjusted to take full width */
     }
     
-
-    .airbnb {
-      width: 7.13vw; /* 102.67px / 1440px * 100 */
-      /* height: 32.02px; */
-    }
-
-    .google {
-      width: 6.67vw; /* 96px / 1440px * 100 */
-      /* height: 32px; */
-    }
-
-    .microsoft {
-      width: 8.54vw; /* 123px / 1440px * 100 */
-      /* height: 26px; */
-    }
-
-    .fedex {
-      width: 7.01vw; /* 101px / 1440px * 100 */
-      /* height: 30px; */
-    }
-
-    .amazon {
-      width: 7.22vw; /* 104px / 1440px * 100 */
-      /* height: 32px; */
-    }
-
 
     /* PROJECTS SECTION */
     .projectSection {
@@ -683,12 +947,12 @@ header {
       }
 
     .projectCards {
-      gap: 2.78vw; /* 40px / 1440px * 100 */
-      padding: 0px 0px;
-      width: 100%;
-      overflow-x: visible; /* Adjust overflow for desktop */
-      white-space: normal; 
-    }
+          gap: 2.78vw; /* 40px / 1440px * 100 */
+          padding: 0px 0px;
+          width: 100%;
+          overflow-x: auto; /* Allows horizontal scrolling */
+          white-space: nowrap; 
+        }
 
     .projectCard {
       width: 23.61vw; /* 340px / 1440px * 100 */
@@ -712,6 +976,15 @@ header {
       /* TESTIMONIAL SECTION */
     .TestimonialSection {
       position: relative;
+    }
+
+    .TestimonialSection .client-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -5px;
+      left: -60px;
     }
     .emojis {
         position: absolute;
@@ -737,6 +1010,7 @@ header {
   }
 
  /* SERVICE SECTION */
+
   .serviceSection {
       gap: 4.86vw; 
       padding: 0px 11.81vw; /* 170px / 1440px * 100 */
@@ -791,7 +1065,7 @@ header {
 
 /* FOOTER */
 .footer {
-  padding: 2.08vw 11.81vw 6.94vw; /* 30px 170px 100px / 1440px */
+  padding: 2.08vw 11.81vw 0px; /* 30px 170px 100px / 1440px */
   display: flex;
   justify-content: space-between;
   flex-direction: row;

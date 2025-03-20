@@ -7,3 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
       navMenu.classList.toggle('active');
     });
   });
+
+// document.getElementById("contactButton").addEventListener("click", function() {
+//   window.location.href = "./pages/contact.html";
+// });
+
+document.getElementById("goToProjects").addEventListener("click", function() {
+  document.getElementById("projects").scrollIntoView({
+    behavior: 'smooth'
+  });
+});
