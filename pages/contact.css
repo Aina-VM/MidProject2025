@@ -111,12 +111,51 @@ header {
 
 /* CONTACT US */
 .contact {
-    margin: 9.72vw 0px 0px 0px; /* 140px / 1440px * 100 */
+    margin: 9.72vw 0px 9.72vw 0px; /* 140px / 1440px * 100 */
     padding: 0px 11.81vw; /* 170px / 1440px * 100 */
 }
 
+.contact h1 {
+  margin: 0px 0px 0px 0px; /* 30px / 1440px * 100 */
+  padding: 6px 0px 80px 0px;
+}
 
+.contact p {
+  color: var(--color-texts);
+  font-size: var(--body-hero-font-size);
+}
 
+form input, form textarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border:none;
+  background-color: #6B708D1A;
+  padding: 20px 22px;
+  margin: 10px 0px 40px 0px;
+}
+
+.contact form .row {
+  display: flex;
+  gap: 20px; /* Adds space between the two fields */
+}
+
+.contact form .field {
+  flex: 1; /* Ensures both fields take up equal width */
+}
+
+button {
+    background-color: var(--color-bottons); /* Ajusta el color principal del botón */
+    color: var(--color-rectangle-service);
+    border: none;
+    border-radius: 0px;
+    height: 80px;
+    width: 100%; /* Los botones ocupan todo el ancho en móviles */
+}
+button:hover {
+  background-color: #072AC89A; /* Optional: Darker green hover effect */
+}
 
 
  /* FOOTER */
@@ -265,6 +304,9 @@ header {
         border: none;
       }
 
+      header .contact-button:hover {
+        background-color: #072AC89A;
+      }
 
 
        /* FOOTER */

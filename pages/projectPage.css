@@ -281,7 +281,7 @@ header {
   }
   
   .CTASection button:hover {
-    background-color: green;
+    background-color: #072AC89A;
   }
   
   /* FOOTER */
@@ -431,6 +431,10 @@ header {
         background-color: var(--color-bottons);
         color: var(--color-rectangle-service);
         border: none;
+      }
+
+      header .contact-button:hover {
+        background-color: #072AC89A;
       }
 
 
