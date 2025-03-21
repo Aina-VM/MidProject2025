@@ -1,12 +1,11 @@
 /* Margins and pagging reset*/
-/* Margins and pagging reset*/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-/* Mobile first */
+/* MOBILE FIRST */
 body {
   background-color: var(--color-background);
   margin: 0px;
@@ -71,7 +70,12 @@ header .logo {
 }
 
 header .menu {
-  display: none; /* Oculta el menú en móviles, usaremos un icono de hamburguesa */
+  display: none; /* Oculta el menú en móviles */
+  position: fixed;
+  top: 30px; 
+  right: 10vw; 
+  background-color: #fff; 
+  padding: 10px; 
 }
 
 header .menu ul {
@@ -87,15 +91,15 @@ header .menu ul li a {
   text-decoration: none;
 }
 
-header .menu.active {
+header .menu.active { 
   display:block;
 }
 
 header .contact-button {
   display: none;
 }
-/* Estilos del icono de hamburguesa */
-/* Icono de hamburguesa con tres líneas */
+
+/* Menu con icono de hamburguesa */
 .hamburger-menu {
   display: flex;
   flex-direction: column;
@@ -111,7 +115,6 @@ header .contact-button {
   background-color: #333; /* Color de las barras */
   border-radius: 5px; /* Esquinas redondeadas para un mejor estilo */
 }
-
 
 /* CONTACT US */
 .contact {
@@ -142,7 +145,8 @@ form input, form textarea {
 
 .contact form .row {
   display: flex;
-  gap: 20px; /* Adds space between the two fields */
+  flex-direction: column;
+  gap: 10px; /* Adds space between the two fields */
 }
 
 .contact form .field {
@@ -161,31 +165,39 @@ button:hover {
   background-color: #072AC89A; /* Optional: Darker green hover effect */
 }
 
-
  /* FOOTER */
 .footer {
   padding: 3.61vw 11.81vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.rightside ul {
+.rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 7.78vw; /* 112px / 1440px * 100 */
+  align-items: flex-start;
+}
+
+.raw {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 9px;
-  align-items: center;
+  gap: 10px;
   li {
     list-style: none;
-    height: 5px;
     a {
       text-decoration: none;
       color: var(--color-texts)
     }
-}}
+  }
+}
 
 .leftside p {
   font-size: 12px;
@@ -193,260 +205,197 @@ button:hover {
 }
 
 
-
-
-
-  /* Tablets */
-  @media (min-width: 500px) {
-    body {
-      font-size: 16px;
-    }
-
-    h1 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: 40px;
-    }
-    
-    h2 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: 30px;
-    }
-    
-    h3 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: 25px;
-    }
-    
-    h4 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: 20px;
-    }
-  
-    p {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-regular);
-      font-size: 16px;
-    }
-  
-    a {
-      color: var(--color-bottons);
-      font-weight: var(--font-weight-regular);
-      font-size: var(--headline-text-font-size);
-      font-family: 12px;
-    }
-  
-  
-
-
-
-/* FOOTER */
-.footer {
-  padding: 2.08vw 11.81vw 0px; /* 30px 170px 100px / 1440px */
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 16.80vw; /* 242px / 1440px * 100 */
-  margin: 0px;
-}
-
-
-
-.rightside ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  width: 100vw;
-  align-items: flex-end;
-  li {
-    list-style: none;
-    height: auto;
-    a {
-      text-decoration: none;
-      color: var(--color-texts);
-      font-size: 12px;
-    }
-}}
-
-.leftside {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-}
-
-.leftside p {
-  font-size: 14px;
-  font-style: normal; 
-}
- .leftside img {
-  width: 98.38px;
-  height: 30px;
-}
-
+/* TABLETS */
+@media (min-width: 500px) {
+  body {
+    font-size: 16px;
   }
 
-  /* Desktops */
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 25px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
 
-  @media (min-width: 1000px) {
+  p {
+    font-size: 16px;
+  }
 
-    body {
-      width: 100vw;
-    }
-    h1 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: var(--h1-font-size);
-    }
-    
-    h2 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: var(--h2-font-size);
-    }
-    
-    h3 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: var(--h3-font-size);
-    }
-    
-    h4 {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-bold);
-      font-size: var(--h4-font-size);
-    }
-  
-    p {
-      font-family: var(--font-roboto);
-      font-weight: var(--font-weight-regular);
-      font-size: var(--body-hero-font-size);
-    }
-  
-    a {
-      color: var(--color-bottons);
-      font-weight: var(--font-weight-regular);
-      font-size: var(--headline-text-font-size);
-      font-family: var(--font-roboto);
-    }
-  
-     
-      header {
-        height: 122px;
-        width: 100vw;
-        display: flex;
-        justify-content: space-between;
-        align-self: center;
-        padding: 3.61vw 11.81vw 0px 11.81vw; /* 52px 170px / 1440px * 100 */
-        position: relative;
-      }
-      
-      header .logo {
-        /* position: absolute;
-        left: 11.81vw;  
-        top: 86.91px; */
-        img {
-          width: 60.53px;
-          height: 18.46px; 
-        }
-      }
-      
-      header .menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex: 2;
-      }
-  
-  
-      header .hamburger-menu {
-        display: none;
-      }
-  
-      header .menu ul {
-        display: flex;
-        flex-direction: row;
-        gap: 60px;
-        width: 295px;
-      }
-  
-      header .menu ul li {
-        margin: 0;
-        align-self: center;
-        height: 22px;
-        
-       }
-  
-      header .menu ul li a {
-        color: var(--color-texts);
-        font-weight: var(--font-weight-medium);
-        height: 22px;
-      } 
-    
-      header .contact-button {
-        display: flex;
-        width: 150px;
-        height: 52px;
-        border-radius: 0%;
-        justify-content: center;
-        align-items: center;
-        /* position: absolute;
-        right: 170.65px;
-        top: 70px; */
-        font-weight: var(--font-weight-regular);
-        font-size: var(--headline-text-font-size);
-        font-family: var(--font-roboto);
-        background-color: var(--color-bottons);
-        color: var(--color-rectangle-service);
-        border: none;
-      }
+  a {
+    font-size: 12px;
+  }
 
-      header .contact-button:hover {
-        background-color: #072AC89A;
-      }
+  /* HEADER */
+  header .menu {
+    top: 55px;
+    right: 11vw;
+  }  
+
+  /* CONTACT US */
+  .contact form .row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adds space between the two fields */
+  }
 
 
-       /* FOOTER */
+  /* FOOTER */
   .footer {
-    padding: 2.08vw 11.81vw 6.94vw; /* 30px 170px 100px / 1440px */
+    padding: 2.08vw 11.81vw; /* 30px 170px 100px / 1440px */
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     height: 16.80vw; /* 242px / 1440px * 100 */
+    margin: 0px;
+    width: 100vw;
+  }
+
+  .rightside {
+    align-items: flex-end;
+  }
+
+  .raw {
+    width: 40.20vw;
+  }
+  
+}
+
+
+/* DESKTOPS */
+@media (min-width: 1000px) {
+
+  body {
+    width: 100vw;
+  }
+  h1 {
+    font-size: var(--h1-font-size);
+    }
+    
+  h2 {
+    font-size: var(--h2-font-size);
+  }
+    
+  h3 {
+    font-size: var(--h3-font-size);
+  }
+    
+  h4 {
+    font-size: var(--h4-font-size);
+  }
+  
+  p {
+    font-size: var(--body-hero-font-size);
+  }
+  
+  a {
+    color: var(--color-bottons);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--headline-text-font-size);
+    font-family: var(--font-roboto);
+  }
+
+  /* HEADER */
+     
+  header {
+    height: 122px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    position: relative;
+  }    
+      
+  header .logo {
+    img {
+      width: 60.53px;
+      height: 18.46px; 
+    }
+  }
+      
+  header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 2;
+    background-color: var(--color-background);
+    position: static;
   }
   
   
-  
-  .rightside ul {
+  header .hamburger-menu {
+    display: none;
+  }
+
+  header .menu ul {
     display: flex;
     flex-direction: row;
+    gap: 60px;
+    width: 295px;
+  }
+
+  header .menu ul li {
+    margin: 0;
+    align-self: center;
+    height: 22px;
+  }
+
+  header .menu ul li a {
+    color: var(--color-texts);
+    font-weight: var(--font-weight-medium);
+    height: 22px;
+  } 
+
+  header .contact-button {
+    display: flex;
+    width: 150px;
+    height: 52px;
+    border-radius: 0%;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--headline-text-font-size);
+    font-family: var(--font-roboto);
+    background-color: var(--color-bottons);
+    color: var(--color-rectangle-service);
+    border: none;
+  }
+
+  header .contact-button:hover {
+    background-color: #072AC89A;
+  }
+
+  /* FOOTER */
+  .rightside {
+    align-items: flex-end;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 435px;
-    gap:75px;
-    align-items: flex-start;
-    li {
-      list-style: none;
-      height: 15px;
-      a {
-        text-decoration: none;
-        color: var(--color-texts)
-      }
-  }}
+  }
+
+  .raw {
+    width: 30.21vw;
+    justify-content: space-between;
+    
+  }
   
   .leftside {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
+    width: 30.21vw;
+    min-width: 350px;
+    height: 7.78vw; /* 112px / 1440px * 100 */
   }
   
   .leftside p {
