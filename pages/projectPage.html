@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles/_colors.css">
+        <link rel="stylesheet" href="./styles/_fonts.css">
+        <link rel="stylesheet" href="projectPage.css">
+        <script src="./styles/projectPage.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class = "logo">
+                <img src="../projectAssets/logos/circle.svg" alt="Logo-circle">
+            </nav>
+            <nav class="nav-container">
+                <div class = "menu">
+                    <ul>
+                        <li><a id="homeLink" href="#">Home</a></li>
+                        <li><a id="goToProjects" href="#">Projects</a></li>
+                        <li><a id="goToServices" href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger-menu" id="hamburgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <button class="contact-button" id="contactButton">Contact Us</button>
+        </header>
+        
+        <section class="simplify">
+            <div class="simplify-titles">
+                <h1>Simplify</h1>
+                <div class="text-row">
+                    <p class="ui-design">UI Design & App Development</p>
+                    <div class="simplify-data">
+                        <p>Completed on</p>
+                        <data>June 22, 2021</data>
+                    </div>
+                </div>
+            </div>
+            <div class="simplify-images">
+                <img src="../projectAssets/projects-section/1.jpg" alt="Simplify Image">
+            </div>
+            <div class="simplify-description">
+                <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
+                <br>
+                <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nis cillum minim tempor enim. </p>
+            </div>
+        </section>
+
+        <section class = "otherProjects" id="otherProjects">
+            <h3>Other Projects</h3>
+            <div class = "projectCards">
+                <div class = "projectCard">
+                    <img src="../projectAssets/projects-section/4.jpg" alt="Project 4">
+                    <div class="text-card">
+                        <h4>Orbit</h4>
+                        <p>UI Design</p>
+                        <a href="#" data-id="4">Learn more</a>
+                    </div>
+                </div>
+                <div class = "projectCard">
+                    <img src="../projectAssets/projects-section/5.jpg" alt="Project 5">
+                    <div class="text-card">
+                        <h4>Purify</h4>
+                        <p>UI/UX Design</p>
+                        <a href="#" data-id="5">Learn more</a>
+                    </div>
+                </div>
+                <div class = "projectCard">
+                    <img src="../projectAssets/projects-section/6.jpg" alt="Project 6">
+                    <div class="text-card">
+                        <h4>CryptoPie</h4>
+                        <p>App Development</p>
+                        <a href="#" data-id="6">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="CTASection">
+            <div>
+                <h3>Do you have any questions?</h3>
+                <p>Let us help you!</p>
+                <form id="subscribeForm">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <span class="error" id="emailError"></span>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="leftside">
+                <img src="../projectAssets/logos/circle.svg" alt="Logo-circle">
+                <p>2972 Westheimer Rd. Santa Ana, <br>Illinois 85486</p>
+            </div>
+            <div class="rightside">
+                <ul class="raw">
+                    <li><a id="error" href="#">Team</a></li>
+                    <li><a id="goToServicesB" href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <ul class="raw">
+                    <li><a id="error" href="#">Press</a></li>
+                    <li><a id="goToProjectsB" href="#">Projects</a></li>
+                    <li><a id="error" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="projectPage.js"></script>
+    </body>
+</html>
