@@ -4,7 +4,7 @@ Project Name: MidPRoject2025 - Aina
 Description
 MidPRoject2025 is a web-based application designed to dynamically load and display information about various projects from a JSON file. The application features sections for recent projects and other projects, linking users to detailed project pages with additional content. It uses HTML, CSS, and JavaScript to render the pages dynamically and incorporates seamless navigation between sections and pages.
 
-Features
+**Features**
 Dynamic Loading of Project Data: Fetch project information from a JSON file stored in the public folder and render it dynamically on the webpage.
 
 Project Detail Pages: Redirect users to specific project detail pages when they click "Learn more" links.
@@ -17,20 +17,20 @@ Smooth Scroll and Navigation: Enables smooth scrolling and dynamic section updat
 
 Responsive Design: Designed with a responsive layout to ensure compatibility across various devices.
 
-Technologies Used
+**Technologies Used**
 Frontend:
 
-HTML: Markup for structuring the content.
+- HTML: Markup for structuring the content.
 
-CSS: Styling the layout and appearance of the page.
+- CSS: Styling the layout and appearance of the page.
 
-JavaScript: Dynamically updating content and handling navigation.
+- JavaScript: Dynamically updating content and handling navigation.
 
 Backend:
 
-JSON: Stores project data for dynamic fetching.
+- JSON: Stores project data for dynamic fetching.
 
-Tools:
+**Tools:**
 
 Visual Studio Code: Development environment.
 
@@ -38,7 +38,7 @@ GitHub: Version control and repository hosting.
 
 Netlify: Deployment for static files.
 
-Explore the website: 
+**Explore the website: **
 
 A. Homepage Navigation:
 
@@ -56,7 +56,7 @@ C. Contact Page with Form Submission:
 
 Validate the email field and interact with the subscribe feature.
 
-JSON Structure:
+**JSON Structure:**
 The project information is stored in a JSON file in the public folder. Here is an example:
 
 json
@@ -84,7 +84,7 @@ json
 
 Verify your application is live and accessible.
 
-Future Improvements:
+**Future Improvements:**
 - Expand JSON structure to include more projects and categories. Especifically I want that from Home Page "Learn More" for projects 2 and 3 goes to Project Page and puts there their information.
 
 - Enhance form validation with real-time feedback and server-side integration.
