@@ -86,7 +86,7 @@
                     <div class="text-card">
                         <h4>Dashcoin</h4>
                         <p>Web Development</p>
-                        <a href="#">Learn more</a>
+                        <a data-id="2" href="#">Learn more</a>
                     </div>
                 </div>
                 <div class = "projectCard">
@@ -94,7 +94,7 @@
                     <div class="text-card">
                         <h4>Vectorify</h4>
                         <p>User Experience Design</p>
-                        <a href="#">Learn more</a>
+                        <a data-id="3" href="#">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -160,9 +160,10 @@
             <div>
                 <h3>Do you have any questions?</h3>
                 <p>Let us help you!</p>
-                <form>
-                    <input type="email" placeholder="Enter your email">
-                    <button>Subscribe</button>
+                <form id="subscribeForm">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <span class="error" id="emailError"></span>
+                    <button type="submit">Subscribe</button>
                 </form>
             </div>
         </section>

@@ -127,9 +127,10 @@ header .contact-button {
   padding: 6px 0px 80px 0px;
 }
 
-.contact p {
+label {
+  font-family: var(--font-roboto);
   color: var(--color-texts);
-  font-size: var(--body-hero-font-size);
+  font-size: var(--headline-text-font-size);
 }
 
 form input, form textarea {
