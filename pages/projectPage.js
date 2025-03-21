@@ -7,3 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
       navMenu.classList.toggle('active');
     });
   });
+
+  document.getElementById("goToProjects").addEventListener("click", function() {
+    document.getElementById("otherProjects").scrollIntoView({
+      behavior: 'smooth'
+    });
+  });

@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="homePage.css">
         <link rel="stylesheet" href="./styles/_colors.css">
         <link rel="stylesheet" href="./styles/_fonts.css">
+        <link rel="stylesheet" href="homePage.css">
         <script src="./homePage.js" defer></script>
     </head>
     <body>
@@ -17,9 +17,9 @@
             <nav class="nav-container">
                 <div class = "menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a id="homeLink" href="#">Home</a></li>
+                        <li><a id="goToProjects" href="#">Projects</a></li>
+                        <li><a id="goToServices" href="#">Services</a></li>
                     </ul>
                 </div>
                 <div class="hamburger-menu" id="hamburgerMenu">
@@ -28,7 +28,7 @@
                     <span></span>
                 </div>
             </nav>
-            <button class="contact-button">Contact Us</button>
+            <button class="contact-button" id="contactButton">Contact Us</button>
         </header>
         
         <section>
@@ -37,8 +37,8 @@
                 <h1>Empower Your Business With Stunning Design!</h1>
                 <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
                 <div class="buttons">
-                    <button class="buttonA">Get in touch</button>
-                    <button class="buttonB" id="goToProjects">See our work</button>
+                    <button class="buttonA" id="goToContact">Get in touch</button>
+                    <button class="buttonB" id="goToProjectsSeccion">See our work</button>
                 </div>
             </div>            
             
@@ -78,7 +78,7 @@
                     <div class="text-card">
                         <h4>Simplify</h4>
                         <p>UI Design & App Development</p>
-                        <a href="#">Learn more</a>
+                        <a id="goToSimplify" href="#">Learn more</a>
                     </div>
                 </div>
                 <div class = "projectCard">
@@ -122,7 +122,7 @@
                 </div>
             </div>
         </section>
-        <section class="serviceSection">
+        <section class="serviceSection" id="servicesPart">
             <h3>Our Services</h3>
             <div class="services">
                 <div class="serviceCard">
@@ -174,14 +174,14 @@
             </div>
             <div class="rightside">
                 <ul class="raw">
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a id="error" href="#">Team</a></li>
+                    <li><a id="goToServicesB" href="#">Services</a></li>
                     <li><a href="#">About Us</a></li>
                 </ul>
                 <ul class="raw">
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a id="error" href="#">Press</a></li>
+                    <li><a id="goToProjectsB" href="#">Projects</a></li>
+                    <li><a id="error" href="#">Privacy Policy</a></li>
                 </ul>
             </div>
         </footer>

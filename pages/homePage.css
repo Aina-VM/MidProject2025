@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* highlights */
+a .highlight {
+  color: var(--color-bottons);
+}
+
 /* MOBILE FIRST */
 body {
   background-color: var(--color-background);
@@ -137,6 +142,7 @@ header .contact-button {
   border: none;
   border-radius: 5px;
   width: 100%; /* Los botones ocupan todo el ancho en móviles */
+  cursor: pointer;
 }
 
 .images-heroSection {
@@ -213,7 +219,7 @@ header .contact-button {
 
 .projectCard {
   padding: 0px;
-  text-align: flex-start;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   width: 150px;
@@ -591,15 +597,14 @@ header .contact-button {
     gap: 2.78vw; /* 40px / 1440px * 100 */
     padding: 0px 0px;
     width: 100%;
-    overflow-x: auto; /* Allows horizontal scrolling */
+    overflow-x: hidden; /* Allows horizontal scrolling */
     white-space: nowrap; 
   }
 
   .projectCard {
     width: 23.61vw; /* 340px / 1440px * 100 */
     height: 30.83vw; /* 444px / 1440px * 100 */
-    min-height: 350px;
-    text-align: left;
+    min-height: 230px;
     img {
       width: 23.61vw; /* 340px / 1440px * 100 */
       height: 16.67vw; /* 240px / 1440px * 100 = 16.67vw*/
@@ -713,7 +718,7 @@ header .contact-button {
 
 
 /* DESKTOPS */
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
 
   body {
     width: 100vw;
@@ -815,7 +820,6 @@ header .contact-button {
   }
 
     /* HERO SECTION */
-
   .heroSection {
     height: 650px;
   }
@@ -845,6 +849,10 @@ header .contact-button {
   .projectSection {
     padding: 0px 11.81vw; /* 170px / 1440px * 100 */
     gap: 4.86vw; /* 70px / 1440px * 100 */
+  }
+
+  .serviceCard {
+    min-height: 400px;
   }
 
    /* TESTIMONIAL SECTION */
