@@ -13,3 +13,26 @@ document.addEventListener("DOMContentLoaded", function() {
       behavior: 'smooth'
     });
   });
+
+ // Buttons to go to contact page
+document.getElementById("contactButton").addEventListener("click", function() {
+  window.location.href = "./contact.html";
+});
+
+// Buttons to go to home page
+document.getElementById("homeLink").addEventListener("click", function() {
+  window.location.href = "./homePage.html";
+});
+
+ // Scrolls to Projects:
+document.getElementById("goToProjects").addEventListener("click", function() {
+  document.getElementById("otherProjects").scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
+document.getElementById("goToProjectsB").addEventListener("click", function() {
+  document.getElementById("otherProjects").scrollIntoView({
+    behavior: 'smooth'
+  });
+});
