@@ -1,9 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // HomeLink functionality
-  const homeLink = document.getElementById("homeLink");
-  if (homeLink) {
-    homeLink.classList.add("highlight");
-  }
 
   // Hamburger Menu functionality
   const hamburgerMenu = document.getElementById('hamburgerMenu');
@@ -60,6 +55,12 @@ document.getElementById("goToServicesB").addEventListener("click", function() {
     behavior: 'smooth',
     block: "start" // Align to the start (top) of the element
   });
+});
+
+
+// footer error
+document.getElementById("error").addEventListener("click", function() {
+  window.location.href = "./error.html";
 });
 
 // CTA form validation

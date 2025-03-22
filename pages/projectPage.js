@@ -37,6 +37,12 @@ document.getElementById("goToProjectsB").addEventListener("click", function() {
   });
 });
 
+// services error
+document.getElementById("error").addEventListener("click", function() {
+  window.location.href = "./error.html";
+});
+
+
 //Al Lio amb JSON:
 document.addEventListener("DOMContentLoaded", function() {
   const projectDetailsContainer = document.querySelector('.simplify');

@@ -29,6 +29,11 @@ document.getElementById("goToProjectsB").addEventListener("click", function() {
   window.location.href = "./projectPage.html";
 });
 
+// footer error
+document.getElementById("error").addEventListener("click", function() {
+  window.location.href = "./error.html";
+});
+
 //form validation
 
 document.getElementById("myForm").addEventListener("submit", function(event) {
