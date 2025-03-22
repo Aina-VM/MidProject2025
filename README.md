@@ -17,6 +17,13 @@ Smooth Scroll and Navigation: Enables smooth scrolling and dynamic section updat
 
 Responsive Design: Designed with a responsive layout to ensure compatibility across various devices.
 
+**Project Structure**
+This project is organized to ensure clarity and maintainability:
+
+There is the folder "pages" where you can find the html, css and js, for each page (homePage, projectPage and contactPage). The styles in css that are common for the three pages of this project are inside the folder named "styles" and there is also another one named "public" that holds the "db.json" file needed in the project.
+
+Outside this folder, in the folder of the project there is a file called "index.html" which is the main entry point of the project. It redirects users directly to the main page (homePage.html) located inside the "pages" folder.
+
 **Technologies Used**
 Frontend:
 
