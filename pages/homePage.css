@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-/* highlights */
-a .highlight {
-  color: var(--color-bottons);
-}
-
 /* MOBILE FIRST */
 body {
   background-color: var(--color-background);
@@ -119,6 +114,10 @@ header .contact-button {
   height: 4px;
   background-color: #333; /* Color de las barras */
   border-radius: 5px; /* Esquinas redondeadas para un mejor estilo */
+}
+
+#homeLink {
+  color: var(--color-bottons);
 }
   
 /*HERO SECTION */
