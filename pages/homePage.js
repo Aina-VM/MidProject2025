@@ -58,7 +58,7 @@ document.getElementById("goToServicesB").addEventListener("click", function() {
 });
 
 
-// footer error
+// service error
 document.getElementById("error").addEventListener("click", function() {
   window.location.href = "./error.html";
 });

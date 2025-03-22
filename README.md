@@ -24,6 +24,8 @@ There is the folder "pages" where you can find the html, css and js, for each pa
 
 Outside this folder, in the folder of the project there is a file called "index.html" which is the main entry point of the project. It redirects users directly to the main page (homePage.html) located inside the "pages" folder.
 
+Another html named "error" has been added to simulate an error page when the link goes to pages still in development.
+
 **Technologies Used**
 Frontend:
 
